@@ -24,9 +24,6 @@ Run this command in separate terminal window
 
 `npm run test`
 
-Test result:
-![UML activity diagram](images/tests.jpg)
-
 ## Compile and migrate project:
 To use the dapp:
 
