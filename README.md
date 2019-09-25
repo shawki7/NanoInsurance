@@ -1,6 +1,6 @@
 # NanoInsurance
 
-NanoInsurance is application project for Udacity's Blockchain course.
+NanoInsurance is a very simple insurance application for flight delay.
 
 ## Prerequisites
 
