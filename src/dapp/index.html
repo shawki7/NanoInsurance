@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container" id="app-container">
+
+        <div id="display-wrapper">
+        </div>
+        <div class="row">
+            <label class="form form-inline">
+                <div class="form-group mr-">
+                    <label for="flight-number">Flight</label>
+                    <select class="form-control ml-2" id="flight-number">
+                        <option value="GL764">GL764</option>
+                        <option selected value="LJ096H">LJ096H</option>
+                        <option value="LGF55">LGF55</option>
+                        <option value="K883">K883</option>
+                    </select>
+                </div>
+                <div class="form-group mr-2">
+                    <label for="flight-ticket">Ticket</label>
+                    <select class="form-control ml-2" id="flight-ticket" >
+                        <option value="333">333</option>
+                        <option selected value="455">455</option>
+                        <option value="678">678</option>
+                        <option value="132">132</option>
+                        <option value="56">56</option>
+                        <option value="38">38</option>
+                    </select>
+                </div>
+                <div class="form-group ml-4">
+                    <label for="flight-value">Insurance value</label>
+                    <input type="number" max="1" class="form-control ml-2 mr-0" id="flight-value" value="0.02" placeholder="Insurance value">ETH
+                </div>
+                <button class="btn btn-primary ml-4" id="submit-purchase">Buy insurance</button>
+            </label>
+        </div>
+        <div class="row mt-5">
+            <div class="d-flex balance-wr">
+                <div class="mr-3">Balance: </div>
+                <div class="balance-value" id="balance-value">0 ETH</div>
+                <button class="btn btn-primary ml-4" id="submit-withdraw">Withdraw funds</button>
+            </div>
+        </div>
+
+        <div class="mt-4">* In order passenger receives credit of 1.5X the amount they paid flight status must be <b>LATE_AIRLINE</b></div>
+
+    </main>
+
+</body>
+
+</html>
